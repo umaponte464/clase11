@@ -1,0 +1,885 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Serif+Text:ital@0;1&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f0e7e3;
+    font-family: serif;
+    line-height: 1.4;
+}
+
+header{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  background-color: #e7ccc6;
+  padding: 1em;
+}
+
+.logo {
+    font-family: "DM Serif Text", serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #503f3c;
+    margin-bottom: 0.5em; 
+}
+
+img{
+    max-width: 100%;
+}
+div img{
+    width: 40%;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    display: block;
+    margin: 0 auto;
+}
+
+#logo img {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.menu ul {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 15px;
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #503f3c;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: "Lora", serif;
+    padding: 0.3em 0.6em;
+    border-radius: 6px;
+    transition: color 0.3s ease;
+}
+.menu ul li a:hover {
+    color: #503f3c;
+}
+
+
+ul{
+    list-style: none;
+}
+a{
+    color: #503f3c;
+    text-decoration: none;
+    margin-left: 1em;
+    font-family: "Crimson Pro", serif;
+}
+
+h1{
+    color: #503f3c;
+    margin-top: 20px;
+    padding: 20px;
+    font-family: "DM Serif Text", serif;
+}
+p{
+    color: #503f3c;
+    font-family: "Crimson Pro", serif;
+    font-size: 1.25em;
+    margin-bottom: 2em;
+    max-width: 600px;
+    margin: 0 auto;   
+    text-align: center; 
+    line-height: 1.6; 
+    padding: 0 1rem;
+  }
+h2{
+    color: #503f3c;
+    margin-top: 20px;
+    padding: 20px;
+    font-family: "DM Serif Text", serif;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin: 20px 0;
+  justify-items: center;
+}
+
+.galeria img, .galeria video{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0;
+}
+
+.galeria img:hover {
+  transform: scale(1.03); 
+  transition: transform 0.3s ease;
+}
+
+.valores {
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; 
+}
+
+.valores ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.valores li {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 10px;
+  font-size: 1.2rem;
+  padding-bottom: 1em;
+  color: #503f3c;
+  padding: 20px;
+  font-family: "Crimson Pro", serif;
+  font-size: 1.25em;
+}
+
+
+.valores .icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f4e6e0; 
+  color: #8b5d4b;    
+  font-size: 16px;
+}
+
+.valores li:nth-child(1) .icon { background: #FFF0EB; color: #b44e33; } /* Calidez */
+.valores li:nth-child(2) .icon { background: #F7F0FF; color: #8c5bb7; } /* Estética */
+.valores li:nth-child(3) .icon { background: #EFF8F6; color: #168c78; } /* Cuidado */
+.valores li:nth-child(4) .icon { background: #FFF9EC; color: #c78e2a; } /* Practicidad */
+.valores li:nth-child(5) .icon { background: #EBF0FF; color: #2f5fb8; } /* Confianza */
+.valores li:nth-child(6) .icon { background: #FFF0F8; color: #b84f96; } /* Personalización */
+.valores li:nth-child(7) .icon { background: #FFF3F3; color: #c83b3b; } /* Pasión */
+
+footer{
+background-color: #e7ccc6;
+font-size: small;
+}
+
+.baby_inspo{
+    color: #503f3c;
+    margin-top: 20px;
+    padding: 20px;
+    font-family: "DM Serif Text", serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.cumple_inspo{
+    color: #503f3c;
+    margin-top: 20px;
+    padding: 20px;
+    font-family: "DM Serif Text", serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.evento_inspo{
+    color: #503f3c;
+    margin-top: 20px;
+    padding: 20px;
+    font-family: "DM Serif Text", serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.banner{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.menu-btn {
+  background: hsl(0 0% 100% / 0.25);
+  border-radius: 50%;
+  box-shadow: -5px 5px 5px hsl(180 100% 4% / 0.2);
+  padding: .75rem;
+  width: 3rem;
+  aspect-ratio: 1;
+  cursor: pointer;
+  transition: all 0.3s ease-out; 
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  z-index: 9000;
+}
+
+.menu-btn .btn-linea {
+  width: 25px;
+  height: 3px;
+  margin: 4px 0 4px 0;
+  background: hsl(0 0% 90%);
+  transition: all 0.3s ease-out;
+  position: relative;
+  z-index: 9000;
+}
+.menuVisible .menu-btn .btn-linea {
+  transform: rotate(180deg);
+}
+.menuVisible .menu-btn .btn-linea:nth-child(1) {
+  transform: rotate(45deg) translate(4px, 6px);
+}
+.menuVisible .menu-btn .btn-linea:nth-child(2) {
+  opacity: 0;
+}
+.menuVisible .menu-btn .btn-linea:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -6px);
+}
+
+nav ul {
+  background-color:#e7ccc6 ;
+  display: grid;
+  place-items: center;
+  place-content: center;
+
+  position: fixed;
+  inset: 0;
+  z-index: 8000;
+  translate: 100%;
+  
+  transition: all .6s ease;
+}
+
+.menuVisible ul {
+  background-color: #e7ccc6;
+  transition: all .4s ease; 
+  translate: 0;
+}
+
+nav ul li a {
+  border-bottom: solid 3px hsl(0 0% 100% / 0.1);
+  color: white;
+  display: block;
+  font-size: 1.5rem;
+  margin-block-end: .5rem;
+  width: min(70vw, 20rem); 
+  text-align: center;
+  padding: .5rem;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  border-bottom: solid 3px hsl(0 0% 100% / 0.5);
+  transition: all .3s;
+}
+
+main {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+  text-align: center;
+}
+
+.galeria,
+.baby_inspo,
+.cumple_inspo,
+.evento_inspo {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.galeria h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+main {
+    padding-bottom: 60px; 
+}
+
+.galeria {
+    margin-bottom: 40px;
+}
+
+.inspo_resumen {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+  margin-top: 30px;
+}
+
+.inspo_resumen figure {
+  margin: 0;
+}
+
+.inspo_resumen img {
+  width: 300px; 
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.inspo_resumen img:hover {
+  transform: scale(1.03); 
+}
+
+.tortas {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+  margin-top: 30px;
+}
+
+.tortas figure {
+  margin: 0;
+}
+
+.tortas img {
+  width: 300px; 
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.tortas img:hover {
+  transform: scale(1.03); 
+}
+
+.opciones_tortas img {
+  width: 300px; 
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.opciones_tortas img:hover {
+  transform: scale(1.03); 
+}
+
+.finger {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+  margin-top: 30px;
+}
+
+.finger figure {
+  margin: 0;
+}
+
+.finger img {
+  width: 300px; 
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.finger img:hover {
+  transform: scale(1.03); 
+}
+
+.opciones_finger_salado img {
+  width: 300px; 
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.opciones_finger_salado img:hover {
+  transform: scale(1.03); 
+}
+
+.cta-cantidades {
+  text-align: center;
+  background-color: #f6e1dc; 
+  padding: 3rem 1rem;
+  border-radius: 30px;
+  width: 80%;
+  max-width: 800px;
+  margin: 4rem auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.cta-cantidades h2 {
+  color: #4a2c2a; 
+  margin-bottom: 1rem;
+}
+
+.cta-cantidades p {
+  color: #4a2c2a;
+  margin-bottom: 2rem;
+}
+
+.btn-cta {
+  display: inline-block;
+  background-color: #e7b9af; 
+  color: #4a2c2a;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.btn-cta:hover {
+  background-color: #4a2c2a;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.btn-smooth {
+  display: inline-block;
+  background-color: #e6c7c1; 
+  color: #4a2c2a; 
+  text-decoration: none;
+  padding: 0.6rem 1.8rem;
+  border-radius: 999px; 
+  font-family: 'Lora', serif; 
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.btn-smooth:hover {
+  background-color: #dcb1aa; 
+  color: #3a1f1c;
+  transform: translateY(-1px);
+}
+
+.galeria-index {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+  margin-top: 30px;
+}
+
+.galeria-index figure {
+  margin: 0;
+}
+
+.galeria-index img {
+  width: 300px; 
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.galeria-index img:hover {
+  transform: scale(1.03); 
+}
+
+.galeria-inspo {
+  display: flex;
+  justify-content: center; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+  margin-top: 30px;
+}
+
+.galeria-inspo figure {
+  margin: 0;
+}
+
+.galeria-inspo img {
+  width: 300px; 
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.galeria-inspo img:hover {
+  transform: scale(1.03); 
+}
+
+.formulario-presupuesto {
+  background-color: #f6ebe7; /* color beige rosado suave */
+  padding: 2rem;
+  max-width: 600px;
+  margin: 3rem auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: left;
+  font-family: 'Libre Baskerville', serif; /* o la que uses en tu sitio */
+  color: #4a2e2b;
+}
+
+.formulario-presupuesto h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #a1665e;
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.formulario-presupuesto label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.formulario-presupuesto input,
+.formulario-presupuesto select,
+.formulario-presupuesto textarea {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid #e0c8c0;
+  border-radius: 12px;
+  background-color: #fffdfc;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: #4a2e2b;
+}
+
+.formulario-presupuesto textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.fecha-hora {
+  display: flex;
+  gap: 1rem;
+}
+
+.fecha-hora div {
+  flex: 1;
+}
+
+.formulario-presupuesto input[type="file"] {
+  border: none;
+  padding: 0;
+}
+
+.formulario-presupuesto button {
+  display: block;
+  margin: 2rem auto 0;
+  background-color: #a1665e;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+.formulario-presupuesto button:hover {
+  background-color: #8d554e;
+}
+
+@media (max-width: 520px) {
+  .valor-text { font-size: 15px; }
+  .galeria {
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .galeria img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .galeria h2 {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 600px) {
+ header {
+    flex-direction: row;        
+    justify-content: space-between;
+    padding: 1em 2em;
+  }
+
+  #Logo img {
+    width: 120px;             
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .menu ul {
+    flex-direction: row;       
+    gap: 20px;                
+  }
+
+  .menu ul li a {
+    font-size: 1.1rem;         
+    padding: 0.4em 0.8em;
+  }
+
+  .galeria {
+    flex-direction: row;      
+    flex-wrap: wrap;           
+    justify-content: center;
+  }
+
+  .galeria img, .galeria video {
+    width: 220px;               
+    height: 220px;
+  }
+
+    .galeria {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+    .inspo_resumen {
+    flex-direction: row;      
+    flex-wrap: wrap;           
+    justify-content: center;
+  }
+
+  .inspo_resumen img {
+    width: 220px;               
+    height: 220px;
+  }
+
+    .inspo_resumen {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  header nav {
+    position: relative;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
+  header nav ul,
+  header .menuVisible ul {
+    display: flex;
+    gap: .25em;
+    position: relative;
+    translate: 0;
+    background-color: unset;
+  }
+
+  header nav ul li {
+    min-width: 4em; 
+  }
+
+  header nav ul li a {
+    border-radius: .25em ;
+    color: white;
+    font-size: 1rem;
+    width: auto;
+    padding: .25em 1em;
+    text-align: center;
+    display: block; 
+    margin-block-end: unset;
+    border-block-end: unset;
+  }
+  
+
+  header nav ul li a:hover {
+    background-color: #f4e6e0;
+    border-block-end: unset;
+  }
+.galeria {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .galeria img {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .galeria h2 {
+    text-align: center;
+  }
+  
+  .opciones_tortas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .opciones_finger_salado{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .galeria-index {
+    flex-direction: row;      
+    flex-wrap: wrap;           
+    justify-content: center;
+  }
+
+  .galeria-index img {
+    width: 220px;               
+    height: 220px;
+  }
+
+    .galeria-index {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  p{
+    color: #503f3c;
+    font-family: "Crimson Pro", serif;
+    font-size: 1.75em;
+    margin-bottom: 2em;
+    max-width: 600px;
+    margin: 0 auto;   
+    text-align: center; 
+    line-height: 1.6; 
+    padding: 0 1rem;
+  }
+
+   .fecha-hora {
+    flex-direction: column;
+  }
+
+  .formulario-presupuesto {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 901px) {
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 4em;
+  }
+
+  #Logo img {
+    width: 150px;    
+    height: auto;
+  }
+
+  .menu ul {
+    flex-direction: row;
+    gap: 30px;       
+  }
+
+  .menu ul li a {
+    font-size: 1.2rem;
+    padding: 0.5em 1em;
+  }
+
+  .galeria {
+    display: grid;
+    justify-content: center;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .galeria img, .galeria video {
+    width: 250px;    
+    height: 250px;
+  }
+
+  .galeria {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .galeria img, .galeria video {
+    margin: 0 auto;
+  }
+
+  .galeria h2 {
+    text-align: center;
+  }
+
+    .inspo_resumen {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .inspo_resumen img {
+    width: 250px;    
+    height: 250px;
+  }
+
+  .inspo_resumen {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+  .opciones_tortas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .opciones_finger_salado{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  p {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+   .galeria-index {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .galeria-index img {
+    width: 250px;    
+    height: 250px;
+  }
+
+  .galeria-index {
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+

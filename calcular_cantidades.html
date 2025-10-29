@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+       <meta charset="UTF-8">
+       <title>Savé by Augusta Jaled</title>
+       <link href="css/estilos.css" rel="stylesheet" />
+       <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+       <script src="js/menu.js" defer></script>
+        <script>
+        
+            // Control javascript para escribir el valor del <input type="Range" />
+        
+            // Cuando se realice el evento tipo "load", se ejecute la listener/función "inicio" y luego no haga useCapture "false".
+        
+        addEventListener('load', inicio, false);
+
+        function inicio() {
+            
+            // "temperatura" es el <input type="range">
+            // addEventListener() Registra un evento a un objeto en específico. 
+            document.getElementById('temperatura').addEventListener('change', cambioTemperatura, false);
+        }
+
+            // InnerHTML es una propiedad que nos permite leer o escribir un dato
+            // Dentro del innerHtml del elemento "temp" escriba el valor del objeto "temperatura" 
+        
+        function cambioTemperatura() {
+            document.getElementById('temp').innerHTML = document.getElementById('temperatura').value;
+        }
+
+    </script>
+    </head>
+    <body>
+        <header>
+            <div id="Logo">
+                <img src="imagenes/save_logo.png" alt="Logo de Savé by Augusta Jaled">
+            </div>
+
+            <nav>
+                <button
+                    class="menu-btn"
+                    type="button"
+                    title="menu">
+                    <div class="btn-linea"></div>
+                    <div class="btn-linea"></div>
+                    <div class="btn-linea"></div>
+                </button>
+            
+            <ul class="menu">
+                <ul>
+                    <li class="nav-item">
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sobre_save.html">Sobre Savé</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="inspiracion.html">Inspiración</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="presupuesto.html">Presupuesto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="calcular_cantidades.html">Calcular cantidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="condiciones.html">Términos y condiciones</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+        
+        </header>
+        <main>
+            <section class="calcular-cantidades">
+                <h2> Calcular cantidades</h2>
+                <form>
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" id="nombre" required> 
+
+                    <label for="tipo">Tipo de evento</label>
+                    <select id="tipo">
+                        <option value="">Seleccionar...</option>
+                        <option>Boda</option>
+                        <option>Cumpleaños</option>
+                        <option>Baby Shower</option>
+                        <option>Evento Coorporativo</option>
+                        <option>Otro</option>
+                    </select>
+                    
+                    <div class="fecha-hora">
+                        <div>
+                            <label for="fecha"> Fecha del evento</label>
+                            <input type="date" id="fecha" name="fecha">
+                        </div>
+                        <div>
+                            <label for="hora"> Horario del evento</label>
+                            <input type="time" id="hora" name="hora">
+                        </div>
+                    </div>
+
+                    <label for="preferencias">Preferencias</label>
+                    <textarea id="preferencias" name="preferencias"></textarea>
+
+                    <label for="restricciones">Restricciones</label>
+                    <textarea id="restricciones" name="restricciones"></textarea>
+
+                    <label for="archivo">Si tenés imágenes o videos de inspiración, podés subirlos acá</label>
+                    <input type="file" id="archivo" name="archivo">
+
+                    <button type="submit" name="archivo"></button>
+
+                    <label for="botonEnviar"></label>
+                    <button class="botonEnviar" name="botonEnviar">Calcular cantidades</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>
+            Seguinos en redes | Whatsapp | Medios de pago
+            </p>
+        </footer>
+    </body> 
+</html>
